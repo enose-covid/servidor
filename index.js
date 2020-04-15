@@ -17,9 +17,10 @@ app.set('view engine', 'ejs');
 
 var mqtt = require('mqtt');
 
-
-
 app.use('/api',new Api());
+app.use('/index.html',(req, res, next)=>{
+  res.render('index.ejs',{titulo:"e-nose covid 19"});
+});
 
 app.use('/', express.static('public'));
 // respond with "hello world" when a GET request is made to the homepage

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shrine (MDC Web Example App)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+  <link href="/styles/home.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="home">
+  <aside class="mdc-drawer shrine-drawer">
+    <div class="mdc-drawer__header">
+        <img src='/assets/logo.png'  class="shrine-logo" />
+        <h1><%= titulo %></h1>
+    </div>
+    <div class="mdc-drawer__content">
+      <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" aria-selected="true" tabindex="0" href="#">
+          <span class="mdc-list-item__text">Featured</span>
+        </a>
+        <div class="shrine-select-item-divider mdc-list-divider" role="separator"></div>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Usuarios</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+          <span class="mdc-list-item__text">Dispositivos</span>
+        </a>
+
+      </nav>
+    </div>
+  </aside>
+  <div class="shrine-body">
+
+  </div>
+
+  <script src="bundle-home.js" async></script>
+</body>
+</html>

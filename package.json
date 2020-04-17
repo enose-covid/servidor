@@ -11,9 +11,12 @@
     "mqtt": "^3.0.0",
     "mysql": "^2.18.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "repository": {

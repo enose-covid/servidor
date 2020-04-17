@@ -27,3 +27,17 @@ en la pagina del proyecto nos descargamos el zip con todo el codigo, lo descompr
 ~~~
 npm install
 ~~~
+
+## Ejecucion de la aplicación
+
+### En producción:
+
+~~~
+npm start
+~~~
+
+### En desarrollo:
+
+~~~
+npm run dev
+~~~

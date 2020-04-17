@@ -10,15 +10,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
-  <link href="styles/login.css" rel="stylesheet" type="text/css" />
+  <link href="/styles/login.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="shrine-login">
     <section class="header">
-      <img src='assets/logo.png'  class="shrine-logo" />
+      <img src='/assets/logo.png'  class="shrine-logo" />
       <h1><%= titulo %></h1>
     </section>
   
-    <form action="api/login" method="POST">
+    <form action="/api/login" method="POST">
       <div class="mdc-text-field username">
         <input type="text" class="mdc-text-field__input" id="username-input" name="username" required>
         <label class="mdc-floating-label" for="username-input">Usuario</label>
@@ -39,6 +39,6 @@
       </div>
     </form>
   
-    <script src="js/bundle.js" async></script>
+    <script src="/js/bundle.js" async></script>
   </body>
   </html>

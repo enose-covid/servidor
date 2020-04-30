@@ -10,8 +10,8 @@ class BBDD {
     constructor() {
         this.connection = mysql.createConnection({
             host: 'localhost', // http://enose.hopto.org/phpmyadmin
-            user: 'covid',
-            password: 'covid19',
+            user: 'root',
+            password: 'raspberrypi',
             database: 'nose-covid'
         });
 

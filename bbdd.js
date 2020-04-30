@@ -14,6 +14,7 @@ class BBDD {
             password: 'raspberrypi',
             database: 'nose-covid'
         });
+        this.connect()
 
     }
 

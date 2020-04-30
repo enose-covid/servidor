@@ -11,7 +11,7 @@ class Api extends Router {
         super();
 
         // definicion de rutas
-        this.post('/login', async (res, req, next) => {
+        this.post('./login', async (res, req, next) => {
             console.log(res.body);
             let user = await new BBDD().login(res.body.username, res.body.password);
             if (user[0])

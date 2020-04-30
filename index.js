@@ -19,7 +19,7 @@ var mqtt = require('mqtt');
 
 app.use('/api',new Api());
 app.use('/index.html',(req, res, next)=>{
-  res.render('index.ejs',{titulo:"e-nose covid 19"});
+  res.render('index.js',{titulo:"e-nose covid 19"});
 });
 
 app.use('/', express.static('public'));
